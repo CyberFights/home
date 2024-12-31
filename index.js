@@ -36,7 +36,7 @@ app.use('/html/uploads', express.static(directoryPath));
 app.use(express.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 
 app.get('/', (res, req) => {
-     window.navigate('/home/index.html'); 
+     window.location.replace('/home/index.html'); 
 });
 app.post('/upload', upload.single('image'), (req, res) => {
     // Registration logic remains the same
