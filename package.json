@@ -1,28 +1,32 @@
 {
-  "name": "cyberfights",
+  "name": "chat_app",
   "version": "1.0.0",
-  "description": "",
+  "description": "A chat application with user registration, file uploads, and chat messaging functionality.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "chat",
+    "socket.io",
+    "express",
+    "sqlite",
+    "file-upload"
+  ],
+  "author": "CyberFights",
+  "license": "MIT",
   "dependencies": {
-    "@replit/database": "^2.0.5",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
+    "better-sqlite3": "^8.0.0",
     "express": "^4.18.2",
-    "fs": "^0.0.1-security",
-    "http": "^0.0.1-security",
-    "mongodb": "^6.8.0",
+    "http": "0.0.1-security",
     "multer": "^1.4.5-lts.1",
     "node-fetch": "^3.3.2",
     "path": "^0.12.7",
-    "socket.io": "^4.7.4"
+    "socket.io": "^4.7.2"
   },
-  "devDependencies": {
+    "devDependencies": {
     "eslint": "^8.56.0"
   }
 }
